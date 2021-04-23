@@ -1,0 +1,70 @@
+.NavBar {
+    height: 100vh;
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+
+        .profile {
+            width: 100%;
+            text-align: center;
+            margin-top: 1rem;
+            border-bottom: 1px solid #3d456d;
+            img {
+                width: 90%;
+                border-radius: 100%;
+                border: 5px solid #3d456d;
+                margin-bottom: 1rem;
+            }
+        }
+
+        .nav-items {
+            width: 100%;
+            .nav-item {
+                list-style: none;
+                text-align: center;
+                a {
+                    display: block;
+                    text-decoration: none;
+                    font-size: inherit;
+                    color: #fff;
+                    padding: .6rem 0;
+                    position: relative;
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: .4rem;
+                        height: 100%;
+                        background-color: #1d8cfc38;
+                        color: #fff;
+                        transform-origin: bottom;
+                        transform: scale(0);
+                        overflow-x: hidden;
+                        transition: transform .3s,.4s width .2s;
+                    }
+                    &:hover:before {
+                        width: 100%;
+                        transform: scale(1);
+                    }
+                }
+            }
+        }
+        
+        .footer {
+            width: 100%;
+            border-top: 1px solid #3d456d;
+            p {
+                padding: 1rem .2rem;
+                text-align: center;
+            }   
+        }
+    }
+}
+
+.active {
+    background-color: #037fff;
+}

@@ -1,0 +1,86 @@
+.App {
+    .sidebar {
+        width: 16%;
+        height: 100vh;
+        background: rgb(5,82,245);
+        background: linear-gradient(0deg, rgba(5,82,245,1) 0%, rgba(12,100,205,1) 9%, rgba(17,43,232,1) 18%, rgba(3,16,85,1) 43%, rgba(1,1,9,1) 100%); 
+        position: fixed;
+        border-right: 1px solid #3d456d;
+        z-index: 11;
+        transform-origin: left;
+        @media screen and (max-width: 1000px){
+            transition: all .4s ease-in-out;
+            transform: translateX(-100%);
+            width: 25%;
+        }
+        @media screen and (max-width: 835px){
+            width: 30%;
+        }
+        @media screen and (max-width: 768px){
+            width: 30%;
+        }
+        @media screen and (max-width: 420px){
+            width: 50%;
+        }
+    }
+    .nav-toggle {
+        @media screen and (max-width: 1000px){
+            transition: all .4s ease-in-out;
+            transform: translateX(0);
+        }
+    }
+    .main-content {
+        width: 84%;
+        min-height: 100vh;
+        margin-left: 16%;
+        background: rgb(5,82,245);
+        background: linear-gradient(0deg, rgba(5,82,245,1) 0%, rgba(12,100,205,1) 9%, rgba(17,43,232,1) 18%, rgba(3,16,85,1) 43%, rgba(1,1,9,1) 100%); 
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: grid;
+        position: relative;
+        .content {
+            margin: 2rem 5rem;
+            @media screen and (max-width: 568px){
+                margin: 1rem 2rem;
+            }
+        }
+        @media screen and (max-width: 1000px){
+            width: 100%;
+            margin-left: 0;
+        }
+    }
+}
+
+.nav-btn {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    width: 2.5rem;
+    height: 2.5rem;
+    z-index: 10;
+    display: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    .line-1, .line-2, .line-3 {
+        height: .3rem;
+        width: 100%;
+        background-color: #037fff;
+        border-radius: 6px;
+        pointer-events: none;
+        display: none;
+        &:not(:last-child) {
+            margin-bottom: .5rem;
+        }
+    }
+    @media screen and (max-width: 1000px){
+        display: block;
+        .line-1, .line-2, .line-3 {
+            display: block;
+        }
+    }
+    
+}
