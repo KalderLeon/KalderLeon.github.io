@@ -22,6 +22,7 @@ class AboutPage extends Component {
                     <SkillsSection skill={'GULP'} progress={'45%'} width={'45%'}/>
                     <SkillsSection skill={'Adobe PHOTOSHOP CS6 | FIGMA'} progress={'35%'} width={'35%'}/>
                     <SkillsSection skill={'Building cross-browser and adaptive websites'} progress={'70%'} width={'70%'}/>
+                    <SkillsSection skill={'Git'} progress={'45%'} width={'45%'}/>
                 </div>
                 <div className="serv-title">
                     <Tittle title={'Сервисы'} span={'Services'}/>
