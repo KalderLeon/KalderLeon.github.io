@@ -9,7 +9,7 @@ const portfolios = [
         id: 1,
         category: 'React.js',
         title: 'Portfolio',
-        link1: 'https://resume-lev-ig.netlify.app/',
+        link1: 'https://resume-lev-ig.netlify.app',
         link2: 'https://github.com/KalderLeon/resume',
         icon1: 'View',
         icon2: 'GHub',
